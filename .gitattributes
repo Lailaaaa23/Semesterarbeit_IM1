@@ -1,2 +1,85 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="login copy.html">
+                <img src="img/logo_dunkel_blau.PNG" alt="Logo">
+            </a>
+        </div>
+        <div>
+            <a href="login copy.html">
+                <img src="img/benutzerbild.svg" width="45" height="45" alt="Logo">
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav_links">
+            <li> <a class="aktiver_menulink" href="#"> Übersicht</a></li>
+            <li><a href="#">Aktuelles</a></li>
+            <li><a href="#">Veranstaltungen</a></li>
+            <li><a href="#">Projekte</a></li>
+            <li><a href="#">Freizeit</a></li>
+            <li><a href="#">Welt</a></li>
+            <li><a href="#">Interessant</a></li>
+            <li><a href="#">Kunst</a></li>
+            <li><a href="#">Gut zu wissen</a></li>
+            <li><a href="#">Brambrüesch</a></li>
+            <li><a href="#">Calanda</a></li>
+          </ul>
+    </nav>
+
+    <main class="nachricht_und_rechter_banner_container">
+
+        <div class="oberstes_banner_und_nachricht">
+            <div class="horizontales_banner">
+                <img src="img/bannerHorizontal.jpg">
+            </div>
+
+            <article class="container_einzelner_nachricht">
+                <!--Eigentlicher Inhalt des Schrittes 7-->
+                <div class="datum_einzelner_nachricht"> 13. Mai 2024, 22:22</div>
+                <h2 class="titel_einzelner_nachricht">Interne Weiterbildung: Flipchart-Training</h2>
+                <div class="bild_einzelner_nachricht"><img src="img/pic1.PNG"></div>
+                <div class="inhalt_bild_einzelner_nachricht">
+                    <p>Mann braucht kein Zeichnungstalent, um sirkungsvolle Flipcharts zu gestaltem un dmit einfachen ...</p>
+                    <p>
+                    Termin<br>
+                    Mitwwoch, 18.05.2022<br>
+                    09:00-17:00
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+                </p>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="rechter_banner">
+            <img src="img/bannerVertical.jpg">
+        </div>
+
+    </main>
+    <footer>
+        IMPNEWS GmbH<br>
+        <a href="mailito:info@impnews.ch" style="color: white">info@impnews.ch</a><br>
+        Tel. +41851234567
+    </footer>
+   
+</body>
+</html>

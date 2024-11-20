@@ -1,0 +1,337 @@
+*{
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgb(124, 95, 95);
+    font-size: 16px;
+
+    text-decoration:none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex:1;
+}
+
+.nav_links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+
+    list-style: none;
+}
+
+.nav_links li a{
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 15px 0px 15px;
+}
+
+.nav_links li a:hover, .aktiver_menulink{
+    color: var(--blue);
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: var(--blue);
+}
+
+:root{
+    --blue: rgb(105, 19, 13);
+    --blue_low_opacity: rgba(102, 10, 10, 0.74);
+}
+
+
+.grosse_nachricht, .kleine_nachricht, .grosse_nachricht_vertikal{
+    box-sizing: border-box;
+    height: 70vw;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.nachrichtenbild_titelseite{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.zwei_ueberschriften{
+    position: absolute;
+    bottom: 8px;
+    left:16px;
+}
+
+.marker, .mini_marker{
+    background-color: var(--blue_low_opacity);
+    color: white;
+    margin-bottom: 10px;
+    padding: 3px;
+    line-height: 150%;
+}
+
+.marker{
+    font-size: 22px;
+}
+
+.mini_marker{
+    background-color: #4d0000;
+}
+
+.grosse_nachricht h2, .kleine_nachricht h2, .grosse_nachricht_vertikal h2{
+    margin: 5px 0px -1px 0px;
+}
+
+
+footer{
+    width: 100%;
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*_______________________Login Form_____________________*/
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form*/
+.login_form form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  .login_form input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+  
+    border-width:0px 0px 1px 0px;
+    border-style:solid;
+    border-color:var(--blue);
+  
+    box-sizing: border-box;
+  }
+  
+  .login_form input:focus{
+      outline: none;/*Damit kein orangener Rahmen angezeigt wird beim anclicken*/
+  }
+  
+  .login_form button {
+    background-color: var(--blue);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  
+    border-radius:3px;
+  }
+  
+  /*for both buttons in form*/
+  .login_form button:hover {
+    opacity: 0.8;
+  }
+  
+  .login_form .cancelbtn {
+    width: auto;/*Zuerucksetzen auf Standardwert*/
+    padding: 10px 18px;
+    background-color: #1b1413;
+  }
+  
+  .login_form .container_benutzerbild {
+    text-align: center;/*https://www.freecodecamp.org/news/how-to-center-an-image-in-css/*/
+    margin: 0 0 -50px 0; /*0 is short form of "0 every_unit"*/
+  }
+  
+  .login_form .container {
+    padding: 16px;
+  }
+  
+  .login_form span.psw {/*Passwort fergessen? Text*/
+    float: right;
+    padding-top: 16px;
+  }
+  
+  
+  form label{
+    color:var(--blue);
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  /*_______________________Ende Login Form_____________________*/
+
+  /*_______________________Einzelne Nachricht_____________________*/
+.container_einzelner_nachricht {
+    border: 3px solid #f1f1f1;
+    padding:10px;
+    margin-top:10px;
+  }
+  
+  .datum_einzelner_nachricht{
+    text-align: right;
+    font-size:13px;
+  }
+  
+ .titel_einzelner_nachricht{
+    font-size:30px;
+    color:var(--blue);
+    margin-top:10px;
+  }
+  
+  .bild_einzelner_nachricht{
+    height:50vw;
+    margin-top:10px;
+  }
+  
+  .bild_einzelner_nachricht img{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+  }
+  
+  .inhalt_einzelner_nachricht{
+    margin-top:10px;
+  }
+  
+/*______________________Banner Smartphone______________________*/
+
+  .rechter_banner{
+    display: none;
+  }
+
+  .horizontales_banner{
+    height:30vw;
+  }
+
+  .horizontales_banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  } 
+  /*_______________________Sticky_____________________*/
+
+  nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    background-color: white;
+
+    z-index: 100;
+}
+
+  .rechter_banner{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+  /*_______________________Footer_____________________*/
+
+  html, body{
+    height: 100%;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main{
+    flex:1;
+  }
+
+@media(min-width:1000px) {
+    .alle_nachrichten_uebersicht{
+     display: grid;
+ 
+     grid-template-columns: 49% 49%;
+ 
+     grid-auto-rows: 50vw;
+ 
+     grid-column-gap: 10px;
+     grid-row-gap: 10px;
+ 
+     justify-content: center;
+ 
+    } 
+ 
+    .grosse_nachricht, .kleine_nachricht, .grosse_nachricht_vertikal{
+     margin-bottom: 0px;
+ 
+    }
+    .grosse_nachricht{
+     height: auto;
+     grid-column: 1/3;
+    }
+ 
+    .kleine_nachricht{
+     height: auto;
+    }
+ 
+    .grosse_nachricht_vertikal{
+     height: auto;
+     grid-column: 2/3;
+     grid-row: 3/5;
+    }
+ 
+     /*_______________Login Form______________*/
+   .login_form form {
+     margin:auto;/*Zuerucksetzen auf Standardwert*/
+     width:800px;
+   }
+ 
+ 
+   /*_______________Einzelne Nachricht____________*/
+   .nachricht_und_rechter_banner_container{
+     display: flex;
+     justify-content:center;
+   }
+ 
+   .oberstes_banner_und_nachricht{
+     box-sizing: border-box;
+     width:750px;
+   }
+ 
+   .bild_einzelner_nachricht{
+     height:500px;
+   }
+ 
+   .rechter_banner {
+     display:block;
+     width:200px;
+     height:700px;
+     margin-left:10px;
+ 
+     /*position: sticky;
+     top: 0;*/
+   }
+ 
+   .horizontales_banner{
+     height:200px;
+ }
+ }
+ 
+ @media (min-width: 1260px){
+     .alle_nachrichten_uebersicht{
+         grid-template-columns: 32% 32% 32%;
+ 
+         grid-auto-rows: 32vw;
+     }
+ 
+     .grosse_nachricht_vertikal{
+         grid-column: 3/4;
+         grid-row: 2/4;
+     }
+
+
+  /*_______________schritt 10____________*/ 
+body{
+    width: 1260px;
+    margin:auto;
+    }
+}
