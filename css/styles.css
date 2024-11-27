@@ -43,13 +43,12 @@
 }
 
 .mountain{
-  width: 1389px;
-  height: 487px;
-  flex-shrink: 0;
-  
-  align-items: center; /* Centers vertically */
-  justify-content: center; /* Centers horizontally */
-  overflow:visible; /* Makes the overflow on the sides */
+  position: fixed; /* Sticks the image in the same place, even when scrolling */
+  top: 50%; /* Move the image down to 50% of the viewport height */
+  left: 50%; /* Move the image to 50% of the viewport width */
+  transform: translate(-50%, -50%); /* Center the image perfectly */
+  max-width: 100%; /* Optional: ensures it scales responsively */
+  height: auto; /* Maintains aspect ratio */
 
   /* Mittig machen, damit das Bild in der Mitte bleibt*/
 
