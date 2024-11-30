@@ -8,8 +8,6 @@
   font-weight: 700;
   line-height: normal;
 
-  background-color: var(--blue_low_opacity_background);
-
   text-decoration: none;
 }
 
@@ -21,12 +19,16 @@
   --grey: rgb(211, 206, 211)
 }
 
+body {
+  background-color: var(--blue_low_opacity_background);
+}
+
 .title {
   color: var(--light_yellow);
   text-align: center;
   font-family: "Sansita Swashed";
   font-size: 45px;
-}
+} 
 
 .undertitle {
   color: var(--lachs);
@@ -43,31 +45,35 @@
 }
 
 .mountain{
-  position: fixed; /* Sticks the image in the same place, even when scrolling */
-  top: 50%; /* Move the image down to 50% of the viewport height */
-  left: 50%; /* Move the image to 50% of the viewport width */
-  transform: translate(-50%, -50%); /* Center the image perfectly */
-  max-width: 100%; /* Optional: ensures it scales responsively */
-  height: auto; /* Maintains aspect ratio */
+  display: flex;
+  justify-content: center;
+  width: 1389px;
   
 
   /* Mittig machen, damit das Bild in der Mitte bleibt*/
 
 }
 
-
-/*_______________*/
-
-header {
-  display: flex;
-  align-items: center;
+#nav_links {
+  background-color: var(--lachs);
+  width: 0;
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  height: 200px;
+  border-radius: 25px;
 }
 
-.logo {
-  flex: 1;
+#nav_links a {
+  display: block;
 }
 
-.nav_links {
+.burger {
+  text-align: right;
+  margin-right: 15px;
+}
+
+ /*
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -94,6 +100,16 @@ header {
 }
 
 
+_______________*/
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+}
 
 .grosse_nachricht,
 .kleine_nachricht,
@@ -381,7 +397,7 @@ main {
   height: 200px;
 }
 
-
+/*
 @media (min-width: 1260px) {
   .alle_nachrichten_uebersicht {
     grid-template-columns: 32% 32% 32%;
