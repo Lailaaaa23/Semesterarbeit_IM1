@@ -21,7 +21,7 @@
 
 body {
   background-color: var(--blue_low_opacity_background);
-}
+  }
 
 .title {
   color: var(--light_yellow);
@@ -45,9 +45,10 @@ body {
 }
 
 .mountain{
-  display: flex;
-  justify-content: center;
-  width: 1389px;
+  position: absolute;
+  left:50%;
+  margin-left:-500px;
+  width: 1000px;
   
 
   /* Mittig machen, damit das Bild in der Mitte bleibt*/
@@ -57,7 +58,7 @@ body {
 #nav_links {
   background-color: var(--lachs);
   width: 0;
-  position: fixed;
+  position: absolute;
   overflow: hidden;
   right: 0;
   height: 200px;
