@@ -13,7 +13,7 @@
 
 :root {
   --blue: rgb(105, 19, 13);
-  --blue_low_opacity_background: rgba(30, 73, 153, 0.76);
+  --blue_low_opacity_background: rgba(30, 73, 153, 0.9);
   --lachs: rgb(255, 190, 179);
   --light_yellow: rgb(255, 244, 221);
   --grey: rgb(211, 206, 211)
@@ -23,35 +23,46 @@ body {
   background-color: var(--blue_low_opacity_background);
   }
 
+  @font-face {
+    font-family: sansita;
+    src:url(/sansita_swashed.ttf);
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: lexend;
+    src: url(/fonts/lexendzetta.ttf);
+    font-style: normal;
+  }
+
 .title {
   color: var(--light_yellow);
   text-align: center;
-  font-family: "Sansita Swashed";
+  font-family: sansita;
   font-size: 45px;
 } 
 
 .undertitle {
   color: var(--lachs);
   text-align: center;
-  font-family: "Lexend Zetta";
+  font-family: lexend;
   font-size: 20px;
 }
 
 .slogan {
   color: var(--grey);
   text-align: center;
-  font-family: "Lexend Zetta";
+  font-family: lexend;
   font-size: 11px;
 }
+
+  /* Schriftarten installieren*/
 
 .mountain{
   position: absolute;
   left:50%;
   margin-left:-500px;
   width: 1000px;
-  
-
-  /* Mittig machen, damit das Bild in der Mitte bleibt*/
 
 }
 
@@ -72,6 +83,21 @@ body {
 .burger {
   text-align: right;
   margin-right: 15px;
+}
+
+@media(min-width:1000px) {
+  .nav_big {
+    display: grid;
+
+    grid-template-columns: 49% 49%;
+
+    grid-auto-rows: 50vw;
+
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    justify-content: center;
+  }
 }
 
  /*
