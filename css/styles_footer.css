@@ -1,27 +1,160 @@
+/* Footer Styling */
 footer {
     width: 100%;
-    background-color: var(--blue);
+    background-color: rgba(88, 107, 143, 0.79); /* Transparenter Blauton */
     color: white;
     text-align: center;
   
+    /* Innenabstände */
     padding-top: 10px;
     padding-bottom: 10px;
+  
+    /* Abstand zum vorherigen Element */
     margin-top: 10px;
-
+    border-radius: 15px;
     background-image: url(/img/Vector\ 5.svg);
     background-repeat: repeat-x;
+    background-position: bottom; /* Positioniert das Bild am unteren Rand */
+    background-size: auto; /* Originalgröße bleibt erhalten */
+  
   }
-
+  
+  /* Gesamthöhe der Webseite */
   html,
-body {
-  height: 100%;
+  body {
+    height: 100%;
+  }
+  
+  /* Layout des Body */
+  body {
+    display: flex;
+    flex-direction: column; /* Vertikales Layout */
+  }
+  
+  .topemtyspace {
+    height: 20px; /* Füge zusätzlichen Platz hinzu */
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+.pinkwave {
+    height: 30px; 
+       
+
 }
 
-main {
-  flex: 1;
+.titel_footer{
+    font-family: sansita;
+    color: rgb(255, 244, 221);;
+    font-size: 30px;
+    margin: 0px;
+  }
+ 
+.untertitel_footer{
+    font-size: 14px;/* Schriftgröße */
+    letter-spacing: -2.5px; /* Reduziert den Abstand zwischen den Buchstaben */
+    color: rgba(30, 73, 153, 0.9); ;
+    border: 3px solid rgb(255, 190, 179); /* Lachsfarbener Rand */
+    background-color: rgb(255, 190, 179); /* Heller Lachsfarbton als Hintergrund */
+    padding: 4px 10px; /* Innenabstand für besseren Abstand zwischen Text und Rand */
+    border-radius: 20px; /* Abgerundete Ecken für ein weicheres Design */
+    display: inline-block; /* Damit der Rahmen nur die Größe des Textes umfasst */
+    margin: 10px 0; /* Platz ober- und unterhalb des Elements */
+    }
+ 
+.untertitel_footer:hover{
+    transform: scale(1.05); /* Icons werden beim Hover um 20% vergrößert */
+    cursor: pointer; /* Zeigt einen Zeiger beim Hover */
 }
+.icon-container {
+        display: flex; /* Icons nebeneinander anordnen */
+        justify-content: center; /* Zentriert die Icons */
+        gap: 15px; /* Abstand zwischen den Icons */
+        margin-top: 15px; /* Abstand zum "Schreib uns"-Button */
+    }
+
+
+.footer-icon {
+        width: 30px; /* Breite der Icons */
+        height: 30px; /* Höhe der Icons */
+        transition: transform 0.3s; /* Animationseffekt bei Hover */
+        margin: -18px 0; /* Platz ober- und unterhalb des Elements */
+        padding: -1px 10px; /* Innenabstand für besseren Abstand zwischen Text und Rand */
+    }
+    
+.footer-icon:hover {
+        transform: scale(1.2); /* Icons werden beim Hover um 20% vergrößert */
+        cursor: pointer; /* Zeigt einen Zeiger beim Hover */
+    }
+
+/* Media Queries für Tablets */
+@media (min-width: 1000px) {
+    .titel_footer {
+        font-size: 28px; /* Noch größere Schrift für Laptops */
+    }
+    .untertitel_footer {
+        font-size: 18px; /* Weiter vergrößerte Schrift */
+        padding: 8px 20px; /* Mehr Innenabstand */
+    }
+    .icon-container {
+        gap: 25px; /* Noch größerer Abstand zwischen den Icons */
+    }
+    .footer-icon {
+        width: 60px; /* Größere Icons */
+        height: 60px;
+    }
+}
+
+/* Media Queries für Desktops (große Bildschirme) */
+@media (min-width: 1260px) {
+    footer {
+        display: flex;
+        flex-direction: row; /* Icons untereinander anordnen */
+        align-items: center; /* Zentriert die Elemente vertikal */
+        justify-content: space-between; /* Verteilung der Elemente */
+        padding: 20px; /* Innenabstand für den Footer */
+    }
+
+    .titel_footer,
+    .untertitel_footer {
+        align-items: center; /* Zentriert den Text vertikal */
+        justify-content: center; /* Zentriert den Text horizontal */
+        margin-top: -10; /* Entfernt zusätzliche Ränder */
+    }
+
+    .titel_footer {
+        font-size: 32px; /* Große Schrift für Desktop */
+        margin: 10px;
+    }
+    .Titel_Laptop{
+        display: flex;
+        flex-direction: column; /* Icons untereinander anordnen */
+        margin-right: 240px;
+
+}
+    .untertitel_footer {
+        font-size: 20px; /* Großer Text */
+        padding: 10px 25px; /* Mehr Innenabstand */
+   
+
+    }
+    .icon-container {
+        display: flex; /* Flexbox für die Icons */
+        flex-direction: column; /* Icons untereinander anordnen */
+        align-items: start; /* Icons nach links ausrichten */
+        gap: 15px; /* Abstand zwischen den Icons */
+        order: -1; /* Bringt dieses Element ganz nach vorne */
+        margin-bottom: 30px;
+    }
+
+    .footer-icon {
+        width: 45px; /* Größe der Icons */
+        height: 45px;
+        transition: transform 0.3s; /* Animationseffekt bei Hover */
+        margin: 0; /* Kein zusätzlicher Abstand */
+    }
+
+    .footer-icon:hover {
+        transform: scale(1.1); /* Icons werden beim Hover um 10% vergrößert */
+        cursor: pointer; /* Zeigt einen Zeiger beim Hover */
+    }
+    
+ }
