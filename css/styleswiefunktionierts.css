@@ -1,0 +1,80 @@
+* {
+
+    color: #FFF4DD;
+    font-family: lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    text-decoration: none;
+  }
+  
+  :root {
+    --blue: rgb(105, 19, 13);
+    --blue_low_opacity_background: rgba(30, 73, 153, 0.9);
+    --lachs: rgb(255, 190, 179);
+    --light_yellow: rgb(255, 244, 221);
+    --grey: rgb(211, 206, 211)
+  }
+  
+  body {
+    background-color: var(--blue_low_opacity_background);
+    }
+  
+    @font-face {
+      font-family: sansita;
+      src:url(/fonts/sansita_swashed.ttf);
+      font-style: normal;
+    }
+  
+    @font-face {
+      font-family: lexend;
+      src: url(/fonts/lexendzetta.ttf);
+      font-style: normal;
+    }
+
+.titel_wiefunktionierts {
+    color: var(--lachs);
+    text-align: center;
+    font-size: 50px;
+}
+
+.paragraph_wiefunktionierts {
+    color: var(--light_yellow);
+    text-align: center;
+    font-size: 20px;
+}
+
+ol.paragraph_wiefunktionierts {
+    list-style-type: decimal; /* Nummerierte Liste */
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    list-style-position: inside;
+    max-width: 700%;
+}
+
+.custom-button {
+    text-align: center;
+}
+
+.custom-button button {
+    background-color: #3d6be0bf;  /* Graue Hintergrundfarbe */
+    color: #FFBEB3;              /* Lachsfarbene Schrift */
+    opacity: 0.9;                /* 90% Opazität */
+    border: none;                /* Kein Rand */
+    padding: 10px 20px;          /* Abstand innerhalb des Buttons */
+    border-radius: 5px;          /* Abgerundete Ecken */
+    cursor: pointer;            /* Mauszeiger wird zum Zeiger */
+    text-align: center;          /* Text zentrieren */
+    }
+
+.custom-button button:hover {
+    opacity: 1;  /* Volle Opazität bei Hover */
+}
+
+/* Optional: Hover-Effekt für den gesamten Button */
+.custom-button button:hover {
+    background-color: #164edb;  /* Helles Grau bei Hover */
+}
