@@ -86,11 +86,17 @@ nav {
   margin-right: 15px;
 }
 
+.phone {
+  display: none;
+}
+
 @media(min-width:1000px) {
   
+
   #nav_links {
     position: relative;
     display: flex;
+    
     height: auto; 
   }
 
@@ -116,12 +122,54 @@ nav {
     transform: scale(1.1);
   }
 
-
   .mountain {
     display: none;
   }
 
+  body {
+    background: 
+      linear-gradient(rgba(30, 73, 153, 0.9), rgba(30, 73, 153, 0.9)), /* Halbtransparente Farbe */
+      url(/img/mountain.png) 50%/ cover no-repeat;
   }
+
+  .title {
+    font-size: 80px; 
+  }
+
+  .undertitle {
+    font-size: 40px; 
+  }
+
+  .slogan {
+    font-size: 18px; 
+  }
+
+  .phone {
+    display: block; 
+    
+    margin-right: 100px;
+   
+  }
+
+  .front{
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0 50px;
+  }
+
+  .title_all {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    flex: 1;
+
+  }
+
+}
+
+
+  
 
 
 
