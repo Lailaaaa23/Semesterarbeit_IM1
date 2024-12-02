@@ -59,6 +59,7 @@
             .content-container {
                 flex-direction: column; /* Stapelt Links und Bild bei schmalen Bildschirmen */
                 align-items: center; /* Zentriert sie */
+                margin-bottom: 40px;
             }
 
             .image-container {
@@ -72,11 +73,26 @@
                 width: 100%; /* Passt das Bild an kleinere Bildschirme an */
             }
         }
+
+    @media (min-width: 1000px) {
+        .image-container {
+            margin-left: 600px;
+            margin-top: -220px;
+        
+        }
+
+            .content-container {
+                margin-left: 300px;
+                margin-top: 150px
+            }
+        }
+
+
     </style>
 </head>
 <body>
     <nav id="nav_links">
-        <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+        <a id="nav_closer" href="javascript:void(0)" onclick="closeNav()">&times;</a>
         <a class="aktiver_menulink" href="#">Bergregionen</a>
         <a href="#">Wie funktioniert's</a>
         <a href="#">About us</a>
@@ -86,13 +102,14 @@
 
     <main class="alle_nachrichten_uebersicht">
         <section>
-            <div class="title">Download</div>
+            <div class="title">Download App</div>
+            
             <div class="undertitle">
                 Lade dir jetzt die Patschifig Adventures App herunter <br> 
                 und starte dein Abenteuer mit uns:
             </div>
             
-            <!-- Container für Links und Bild -->
+            <!-- Container für Links  -->
             <div class="content-container">
                 <div class="links-container">
                     <div class="slogan">IOS</div>
@@ -100,10 +117,12 @@
                     <div class="slogan">Android</div>
                     <div class="slogan"><a href="#">Download Android</a></div>
                 </div>
-                <div class="image-container">
-                    <img src="img/Rectangle 48.png" alt="picture mountain">
-                </div>
             </div>
+            
+            <div class="image-container">
+                <img src="img/Rectangle 48.png" alt="picture mountain">
+            </div>
+        
         </section>
     </main>
 
