@@ -7,4 +7,21 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
+
+    background-image: url(/img/Vector\ 5.svg);
+    background-repeat: repeat-x;
   }
+
+  html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
