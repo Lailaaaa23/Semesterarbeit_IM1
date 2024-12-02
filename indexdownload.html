@@ -31,13 +31,46 @@
                 <style> .undertitle {margin-bottom: 50px};</style>
 
             
+            <div class="downloadlink">
             <div class="slogan">IOS</div>
             <div class="slogan">Link</div>
             <div class="slogan">Android</div>
             <div class="slogan">Link</div>
+            </div>
+            <style> .downloadlink {
+                text-align: left;
+                margin-left: 50px;
+                </style>
+
             
-            <img src="img/mountain.png" class="mountain" alt="picture mountain">
-        </section>
+            <div class="image-container">
+            <img src="img/Rectangle 48.png" alt="picture mountain">
+            </div>
+<style>
+                .image-container {
+                  text-align: right; 
+                  margin-right: 250px;
+                }
+              
+                img {
+                  max-width: 100%; /* Passt das Bild an die verfügbare Breite an */
+                  height: auto; /*Seitenverhältnis */
+
+  @media (max-width: 768px) {
+    .image-container {
+      text-align: center; /* Zentriert das Bild bei kleineren Bildschirmen */
+    }
+
+    img {
+      width: 80%; /* Bildgröße auf 80% der Breite des Containers begrenzen */
+    }
+  }
+
+  @media (max-width: 480px) {
+    img {
+      width: 60%; /* Für sehr kleine Geräte noch kleiner */
+                }}
+</style>
 
     
     </main>
