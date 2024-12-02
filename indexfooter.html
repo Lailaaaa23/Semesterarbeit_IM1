@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Patschifig Adventures</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_footer.css">
+
+</head>
+<body>
+    <nav id="nav_links">
+        <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+        <a class="aktiver_menulink" href="#">Bergregionen</a>
+        <a href="#">Wie funktioniert's</a>
+        <a href="#">About us</a>
+        <a href="#">Download App</a>
+    </nav>
+    <span class="burger" onclick="openNav()">&#9776;</span>
+
+
+    <main class="alle_nachrichten_uebersicht">
+
+        <section>
+            <div class="title">Patschifig</div>
+            <div class="undertitle">Adventures</div>
+            <div class="slogan">lost & broke in die Bündner Berge</div>
+            
+            <img src="img/mountain.png" class="mountain" alt="picture mountain">
+        </section>
+
+    
+    </main>
+    <footer>
+        IMPNEWS GmbH<br>
+        <a href="mailito:info@impnews.ch" style="color: white">info@impnews.ch</a><br>
+        Tel. +41851234567
+    </footer>
+    
+    <script>
+        function openNav() {
+            document.getElementById("nav_links").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("nav_links").style.width = "0px";
+        }
+    </script>
+
+</body>
+</html>
