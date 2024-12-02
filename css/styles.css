@@ -64,7 +64,7 @@ body {
 
 }
 
-#nav_links {
+nav {
   background-color: var(--lachs);
   width: 0;
   position: absolute;
@@ -89,14 +89,40 @@ body {
   #nav_links {
     position: relative;
     display: flex;
-    height: auto;
+    height: auto; 
+  }
 
-    
+  #nav_links a {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.20);
+    font-family: sansita;
+    font-size: 15px;
+    padding: 20px;
+    flex-shrink: 0;
+
   }
 
   .burger {
     display: none;
   }
+
+  #nav_closer {
+    display: none !important;
+  }
+
+}
+
+
+
+
+
+  #nav_links a:hover,
+  .aktiver_menulink {
+  color: var(--lachs)
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: 
+
 
 }
 
@@ -308,16 +334,6 @@ form label {
 }
 
 /*_______________________Sticky_____________________*/
-
-nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-
-  background-color: white;
-
-  z-index: 100;
-}
 
 .rechter_banner {
   position: -webkit-sticky;
