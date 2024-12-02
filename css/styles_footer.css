@@ -7,4 +7,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
+    
+    background-image: url("paper.gif");
+    background-repeat: repeat-x;
   }
