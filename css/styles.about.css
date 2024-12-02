@@ -1,0 +1,92 @@
+* {
+
+color: #FFF4DD;
+font-family: lexend;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+text-decoration: none;
+}
+
+:root {
+--blue: rgb(105, 19, 13);
+--blue_low_opacity_background: rgba(30, 73, 153, 0.9);
+--lachs: rgb(255, 190, 179);
+--light_yellow: rgb(255, 244, 221);
+--grey: rgb(211, 206, 211)
+}
+
+body {
+background-color: var(--blue_low_opacity_background);
+}
+
+@font-face {
+    font-family: sansita;
+    src:url(/fonts/sansita_swashed.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: lexend;
+    src: url(/fonts/lexendzetta.ttf);
+    font-style: normal;
+}
+
+.titel.about{
+    color: var(--lachs);
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    color: #FFBEB3;
+    font-weight: 700;
+    line-height: normal;
+}
+.bergtext{
+    color: #FFF4DD;
+    text-align: center;
+    font-family: "lexend";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 4cm;
+    margin-right: 4cm;
+}
+
+.vorundnachname{
+    line-height: 10px;
+    color: #FFBEB3;
+    width: 550px;
+    font-size: x-large;
+    text-align: center;
+}
+.informationen {
+    width: 550px;
+    font-size: small;
+    text-align: center;
+}
+
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.person{
+    display: block;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.text{
+    display: block;
+}
+
+.img{
+    max-width: 550px;
+    max-height: 400px;
+    display: block;
+}
