@@ -3,11 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Patschifig Adventures</title>
 
     <link rel="stylesheet" href="css/styles.css">
 
+    <style>
+        /* Allgemeines Styling */
+        .title {
+            margin: 30px;
+        }
+
+        .undertitle {
+            margin-bottom: 50px;
+        }
+
+        .downloadlink {
+            margin-left: 50px;
+        }
+
+        /* Layout für Links und Bild */
+        .content-container {
+            display: flex; /* Flexbox aktiviert */
+            justify-content: space-between; /* Platz zwischen den Elementen */
+            align-items: center; /* Vertikale Zentrierung */
+            gap: 20px; /* Abstand zwischen Links und Bild */
+            text-align: center;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column; /* Links untereinander */
+            gap: 10px; /* Abstand zwischen den Links */
+            
+        }
+
+        .links-container .slogan {
+            font-size: 18px;
+            
+        }
+
+        .image-container {
+            max-width: 40%; /* Beschränkt die Breite des Bildes */
+            text-align: right;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        /* Responsive Anpassungen */
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column; /* Stapelt Links und Bild bei schmalen Bildschirmen */
+                align-items: center; /* Zentriert sie */
+            }
+
+            .image-container {
+                text-align: center;
+                max-width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            img {
+                width: 100%; /* Passt das Bild an kleinere Bildschirme an */
+            }
+        }
+    </style>
 </head>
 <body>
     <nav id="nav_links">
@@ -19,66 +84,33 @@
     </nav>
     <span class="burger" onclick="openNav()">&#9776;</span>
 
-
     <main class="alle_nachrichten_uebersicht">
-
         <section>
             <div class="title">Download</div>
-            <style> .title {margin: 30px};</style>
-            
-            <div class="undertitle">Lade dir jetzt die Patschifig Adventures App herunter <br> 
-                und starte dein Abenteuer mit uns:</div>
-                <style> .undertitle {margin-bottom: 50px};</style>
-
-            
-            <div class="downloadlink">
-            <div class="slogan">IOS</div>
-            <div class="slogan">Link</div>
-            <div class="slogan">Android</div>
-            <div class="slogan">Link</div>
+            <div class="undertitle">
+                Lade dir jetzt die Patschifig Adventures App herunter <br> 
+                und starte dein Abenteuer mit uns:
             </div>
-            <style> .downloadlink {
-                text-align: left;
-                margin-left: 50px;
-                </style>
-
             
-            <div class="image-container">
-            <img src="img/Rectangle 48.png" alt="picture mountain">
+            <!-- Container für Links und Bild -->
+            <div class="content-container">
+                <div class="links-container">
+                    <div class="slogan">IOS</div>
+                    <div class="slogan"><a href="#">Download iOS</a></div>
+                    <div class="slogan">Android</div>
+                    <div class="slogan"><a href="#">Download Android</a></div>
+                </div>
+                <div class="image-container">
+                    <img src="img/Rectangle 48.png" alt="picture mountain">
+                </div>
             </div>
-<style>
-                .image-container {
-                  text-align: right; 
-                  margin-right: 250px;
-                }
-              
-                img {
-                  max-width: 100%; /* Passt das Bild an die verfügbare Breite an */
-                  height: auto; /*Seitenverhältnis */
-
-  @media (max-width: 768px) {
-    .image-container {
-      text-align: center; /* Zentriert das Bild bei kleineren Bildschirmen */
-    }
-
-    img {
-      width: 80%; /* Bildgröße auf 80% der Breite des Containers begrenzen */
-    }
-  }
-
-  @media (max-width: 480px) {
-    img {
-      width: 60%; /* Für sehr kleine Geräte noch kleiner */
-                }}
-</style>
-
-    
+        </section>
     </main>
+
     <footer>
         IMPNEWS GmbH<br>
-        <a href="mailito:info@impnews.ch" style="color: white">info@impnews.ch</a><br>
+        <a href="mailto:info@impnews.ch" style="color: white">info@impnews.ch</a><br>
         Tel. +41851234567
     </footer>
-
 </body>
 </html>
