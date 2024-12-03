@@ -169,7 +169,13 @@ nav {
 
   }
 
-  
+  .beschrieb_startseite{
+    color: var(--light_yellow);
+    text-align: center;
+    font-size: 18px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
 
 
 
