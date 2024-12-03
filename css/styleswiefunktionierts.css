@@ -34,22 +34,16 @@
       font-style: normal;
     }
 
-.titel_wiefunktionierts {
-    color: var(--lachs);
-    text-align: center;
-    font-size: 50px;
-}
-
 .paragraph_wiefunktionierts {
     color: var(--light_yellow);
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 ol.paragraph_wiefunktionierts {
     list-style-type: decimal; /* Nummerierte Liste */
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
     list-style-position: inside;
     max-width: 700%;
