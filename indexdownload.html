@@ -12,73 +12,73 @@
         .title {
             margin: 30px;
         }
-
+    
         .undertitle {
             margin-bottom: 50px;
             font-size: 20px;
-        
         }
-
+    
         .downloadlink {
             margin-left: 50px;
         }
-
+    
         /* Layout für Links und Bild */
         .content-container {
             display: flex; /* Flexbox aktiviert */
-            justify-content: space-between; /* Platz zwischen den Elementen */
-            align-items: center; /* Vertikale Zentrierung */
+            flex-direction: column; /* Standard: untereinander */
+            align-items: center; /* Zentrierung */
             gap: 20px; /* Abstand zwischen Links und Bild */
             text-align: center;
-            
         }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-right: 100px;
-            margin-left: 100px;
-        }
-
-        /* Responsive Anpassungen */
-        @media (max-width: 768px) {
-            .content-container {
-                flex-direction: column; /* Stapelt Links und Bild bei schmalen Bildschirmen */
-                align-items: center; /* Zentriert sie */
-                margin-bottom: 40px;
-                text-align: center;
-                display: flex;
-                
-            } 
-                
-            }
-        
-        @media (max-width: 480px) {
-            img {
-                width: 100%; /* Passt das Bild an kleinere Bildschirme an */
-            }
-        }
-
-    @media (min-width: 1000px) {
-        .image-container {
-            margin-left: 600px;
-            margin-top: -280px;
-            display: flex;
-            
-        
-        }
-            .content-container {
-                margin-left: 300px;
-                margin-top: 150px
-                
-            }
-        }
-
+    
         .icons {
             width: 250px;
             display: flex;
+            justify-content: center;
+        }
+    
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+    
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+    
+        /* Responsive Anpassungen */
+        @media (min-width: 1000px) {
+            .content-container {
+                flex-direction: row; /* Links und Bild nebeneinander */
+                justify-content: space-between;
+                gap: 50px;
+                margin-left: 300px;
+                margin-top: 150px;
+            }
+    
+            .image-container {
+                margin: 0;
+                margin-left: 600px;
+                margin-top: -280px;
+            }
+        }
+    
+        @media (min-width: 1260px) {
+            .content-container {
+                margin-left: 400px;
+                margin-top: 200px;
+            }
+    
+            .image-container {
+                margin-left: 700px;
+                margin-top: -300px;
+            }
         }
     </style>
+    
 </head>
 <body>
     <nav id="nav_links">
