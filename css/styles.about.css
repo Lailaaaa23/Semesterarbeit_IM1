@@ -51,42 +51,95 @@ background-color: var(--blue_low_opacity_background);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 4cm;
-    margin-right: 4cm;
+    /* margin-left: 4cm;
+    margin-right: 4cm; */
 }
 
 .vorundnachname{
-    line-height: 10px;
+    max-width: 550px;
     color: #FFBEB3;
-    width: 550px;
     font-size: x-large;
     text-align: center;
-}
+} 
+.rolle{
+    max-width: 550px;
+    color: #FFBEB3;
+    font-size: large;
+    text-align: center;
+    }
+
 .informationen {
-    width: 550px;
-    font-size: small;
+    max-width: 550px;
+    font-size: medium;
     text-align: center;
 }
 
 .team{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .person{
-    display: block;
-    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 40px;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    max-width: 430px;
 }
 
 .text{
     display: block;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  
 }
 
 .img{
-    max-width: 550px;
-    max-height: 400px;
+    max-width: 350px;
+    max-height: 300px;
     display: block;
+    width: 100%; /* Make the image responsive */
+    margin-bottom: 10px; 
+}
+
+@media (min-width: 1550px) {
+    .person{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 60px;
+        justify-content: center;
+        align-items: center;
+        min-width: 600px;
+        height: auto;
+    }
+
+    .img{
+        max-width: 1050px;
+        max-height: 1000px;
+        display: block;
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain the aspect ratio */
+        margin-top: 10px; 
+    }
+
+    .text{
+        display: block;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .rolle{
+        max-width: 550px;
+        color: #FFBEB3;
+        font-size: large;
+        text-align: center;
+        }
+
 }
