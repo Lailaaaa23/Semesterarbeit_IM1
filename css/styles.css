@@ -148,6 +148,9 @@ nav {
     display: block; 
     
     margin-right: 100px;
+
+    width: 200px; /* Halbe Breite */
+    height: auto; 
    
   }
 
@@ -165,6 +168,10 @@ nav {
     flex: 1;
 
   }
+
+  
+
+
 
 }
 
