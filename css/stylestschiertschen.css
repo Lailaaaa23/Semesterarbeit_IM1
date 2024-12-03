@@ -1,0 +1,100 @@
+* {
+
+    color: #FFF4DD;
+    font-family: lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    text-decoration: none;
+  }
+  
+  :root {
+    --blue: rgb(105, 19, 13);
+    --blue_low_opacity_background: rgba(30, 73, 153, 0.9);
+    --lachs: rgb(255, 190, 179);
+    --light_yellow: rgb(255, 244, 221);
+    --grey: rgb(211, 206, 211)
+  }
+  
+  body {
+    background-color: var(--blue_low_opacity_background);
+    }
+  
+    @font-face {
+      font-family: lexend;
+      src: url(/fonts/lexendzetta.ttf);
+      font-style: normal;
+
+    }
+.title{
+    font-family: lexend;
+    src: url(/fonts/lexendzetta.ttf);
+    font-style: normal;
+    color: #FFBEB3;
+    margin-top: 50px;
+}
+
+/*Alen Start*/
+.picture-container{
+    display:flex;
+    justify-content: space-around;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+    
+}
+
+.element{
+    width: 200px;
+    height:250px;
+    position:relative;
+    top: 50px;
+}
+
+.picture{
+    width:100%;
+    height:100%;
+    border-radius: 25px;
+}
+
+.element h1{
+    position:absolute;
+    top: 10px;
+    color: #FFBEB3;
+    text-shadow: 2px 2px #1E4999;
+    
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+}
+
+.überschrift h2{
+    position:absolute;
+    top: 250px;
+    color: #FFBEB3;
+    text-shadow: 2px 2px #1E4999;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.beschrieb p{
+    color: var(--light_yellow);
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 150px;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+
+/*Alen End*/
