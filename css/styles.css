@@ -90,6 +90,10 @@ nav {
   display: none;
 }
 
+.beschrieb_startseite {
+  margin-top: 42vw;
+}
+
 @media(min-width:1000px) {
   
 
@@ -176,8 +180,6 @@ nav {
     margin: 20px auto;
     max-width: 600px;
   }
-
-
 
 }
 
