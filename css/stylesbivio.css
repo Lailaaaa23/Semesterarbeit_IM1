@@ -50,6 +50,7 @@
     width: 200px;
     height:250px;
     position:relative;
+    top: 50px;
 }
 
 .picture{
@@ -60,8 +61,10 @@
 
 .element h1{
     position:absolute;
-    bottom:0px;
+    top: 10px;
     color: #FFBEB3;
+    text-shadow: 2px 2px #1E4999;
+    
 
     left: 50%;
     transform: translate(-50%, -50%);
@@ -69,14 +72,29 @@
 
 }
 
-.picture:hover{
-    transform: scale(1.05);
+.überschrift h2{
+    position:absolute;
+    top: 250px;
+    color: #FFBEB3;
+    text-shadow: 2px 2px #1E4999;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
-.karte{
-    margin-left: 350px;
-    margin-top: 150px;
+.beschrieb p{
+    color: var(--light_yellow);
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 150px;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
+
 
 
 /*Alen End*/
