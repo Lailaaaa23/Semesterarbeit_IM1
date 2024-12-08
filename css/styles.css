@@ -61,7 +61,7 @@ body {
   left:50%;
   margin-left:-500px;
   width: 1000px;
-
+  z-index: -1;
 }
 
 nav {
@@ -72,16 +72,18 @@ nav {
   height: 230px;
   border-radius: 25px;
   transition: 0.5s;
+ 
 
 }
 
-#nav_links a {
+.nav_links a {
   display: block;
   margin: 5px;
   padding: 3px;
 }
 
-.burger {
+#burger {
+  display: block;
   text-align: right;
   margin-right: 15px;
 }
@@ -174,26 +176,28 @@ nav {
 
 @media(min-width:1000px) {
 
-  #nav_links {
+  .nav_links {
     position: relative;
     display: flex;
     justify-content: center;
     left: 50%;
     height: auto; 
+    width: 0px !important;
+    transition: 0s;
   }
 
-  #nav_links a {
+  .nav_links a {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.20);
     font-family: sansita;
     font-size: 15px;
     padding: 20px;
     flex-shrink: 0;
-    margin: 0 30px 0 0 ;
+    margin: 0 30px 0 0;
 
   }
 
-  .burger {
+  #burger {
     display: none;
   }
 
@@ -201,7 +205,7 @@ nav {
     display: none !important;
   }
 
-  #nav_links a:hover {
+  .nav_links a:hover {
     transform: scale(1.1);
   }
 
@@ -256,10 +260,10 @@ nav {
   }
   
   #logo {
-    display: block !important;
-    background: none !important;
-    font-family: lexend !important;
-
+    position: absolute;
+    background: none;
+    font-family: lexend;
+    display: block;
   }
 
   .content {
