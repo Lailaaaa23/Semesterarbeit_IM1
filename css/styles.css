@@ -99,6 +99,13 @@ nav {
 
 }
 
+.intro p{
+  font-size: 15px;
+  margin: 30px;
+  margin-bottom: 60px;
+
+}
+
 .mountain-container {
   order: -1; /* Bild wird standardmäßig vor den anderen Inhalten angezeigt */
 }
@@ -125,7 +132,7 @@ nav {
   text-shadow: 2px 2px #1E4999;
   
   padding: 20px;
-  flex-shrink: 0;
+
   margin: 30px;
   text-align: center;
 
@@ -142,7 +149,7 @@ nav {
 
 }
 
-#Bergregionen {
+.Bergregionen {
 
   padding:0px;
 
@@ -164,7 +171,7 @@ nav {
 
 }
 
-#Bergregionen img {
+.Bergregionen img {
 
   width: 100%;
   height: 100%;
@@ -258,6 +265,11 @@ nav {
     top: 0;
   
   }
+
+  .intro p{
+    font-size: 20px;
+  
+  }
   
   #logo {
     position: absolute;
@@ -270,10 +282,73 @@ nav {
     margin-top: 50px;
   }
 
+
   .text-container {
-    display: grid;
+    display: flex;
+    justify-content: center;
+
+    margin: 40px;
     
 
+  }
+
+  .Bergregionen {
+
+    
+   
+    
+  }
+  
+  .text-Bergregionen {
+    
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    font-size: 22px;
+
+
+
+  }
+  
+  .Bergregionen img {
+  
+
+   height: 350px;
+  
+    border-radius: 25px;
+    
+  
+  }
+
+  .text-element{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+   
+  }
+
+  
+
+}
+
+@media (min-width:1260px) {
+  
+
+  .text-element{
+
+    flex-direction: row;
+    margin-top: 90px;
+    margin-left: 30px;   
+  
+   
+  }
+
+  body {
+    width: 1260px;
+    margin: auto;
   }
 
 }
