@@ -3,126 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patschifig Adventures</title>
+    <title>Downlaod App</title>
 
     <link rel="stylesheet" href="css/styles.css">
-
-    <style>
-        /* Allgemeines Styling */
-        .title {
-            margin: 30px;
-        }
-    
-        .undertitle {
-            margin-bottom: 50px;
-            font-size: 20px;
-        }
-    
-        .downloadlink {
-            margin-left: 50px;
-        }
-    
-        /* Layout für Links und Bild */
-        .content-container {
-            display: flex; /* Flexbox aktiviert */
-            flex-direction: column; /* Standard: untereinander */
-            align-items: center; /* Zentrierung */
-            gap: 20px; /* Abstand zwischen Links und Bild */
-            text-align: center;
-        }
-    
-        .icons {
-            width: 250px;
-            display: flex;
-            justify-content: center;
-        }
-    
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-        }
-    
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-            height: 300px;
-        }
-    
-        /* Responsive Anpassungen */
-        @media (min-width: 1000px) {
-            .content-container {
-                flex-direction: row; /* Links und Bild nebeneinander */
-                justify-content: space-between;
-                gap: 50px;
-                margin-left: 300px;
-                margin-top: 150px;
-            }
-    
-            .image-container {
-                margin: 0;
-                margin-left: 600px;
-                margin-top: -320px;
-                position: absolute;
-                height: 500px
-            }
-
-            .links-container {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-            }
-    
-        @media (min-width: 1260px) {
-            .content-container {
-                margin-left: 400px;
-                margin-top: 200px;
-            }
-    
-            .image-container {
-                margin-left: 700px;
-                margin-top: -300px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles_footer.css">
+    <link rel="stylesheet" href="css/stylesdownload.css">
     
 </head>
 <body>
-    <nav id="nav_links">
-        <a id="nav_closer" href="javascript:void(0)" onclick="closeNav()">&times;</a>
-        <a class="aktiver_menulink" href="#">Bergregionen</a>
-        <a href="#">Wie funktioniert's</a>
-        <a href="#">About us</a>
-        <a href="#">Download App</a>
-    </nav>
-    <span class="burger" onclick="openNav()">&#9776;</span>
 
-    <main class="alle_nachrichten_uebersicht">
+
+    <a id="logo" href="indexstartseite.html"> PATSCHIFIG<br>ADVENTURES</a>
+    <nav id="nav_links" class="nav_links">
+        <a id="nav_closer" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+        <a href="/indexbergregionen.html">Bergregionen</a>
+        <a href="/indexwiefunktionierts.html">Wie funktioniert's</a>
+        <a href="/indexabout.html">About us</a>
+        <a id="active_link" href="/indexdownload.html">Download App</a>
+    </nav>
+    <span id="burger" onclick="openNav()">&#9776;</span>
+
+
+    <main>
         <section>
-            <div class="title">Download App</div>
+            <div class="title_download">Download App</div>
             
             <div class="undertitle">
                 Lade dir jetzt die Patschifig Adventures App herunter <br> 
                 und starte dein Abenteuer mit uns:
             </div>
+
+        </section>
             
-            <!-- Container für Links  -->
-            <div class="content-container">
-                <div class="links-container">
-                    <div class="icons"><a href="www.appstore.com"><img src="img/AppStore.png" alt="Appstore"></a></div>
-                    <div class="icons"><a href="www.googleplay.com"><img src="img/Googlestore.png" alt="Googlestore"></a></div>
-                </div>
+        <section class="whole_front">
+            <div class="three_icons">
+                <img class="app_icon" src="/img/App_Icon_prov.png" alt="App icon">
+                <div class="download_icons">
+                <a href="#" target="_blank"><img class="icon_apple" src="img/app-store.png" alt="appstore"></a>
+                <a href="#" target="_blank"><img class="icon_google" src="img/google store.png" alt="googleplay"></a>
             </div>
-            
-            <div class="image-container">
-                <img src="img/Rectangle 48.png" alt="picture mountain">
             </div>
         
-        </section>
+            <img class="phone" src="/img/Rectangle 48.png" alt="Phone">
+        </section>  
+        
     </main>
+
+    <footer>
+        <section class="Titel_Laptop"> 
+            <p class="titel_footer">Brauchst du mehr Infos?</p>
+
+            <a href="mailto: patschifig.adventures@gmail.com">
+                <button class="untertitel_footer">schreib uns</button>
+            </a>
+        </section>
+        
+        <section class="icon-container">
+            <div class="icon-elemente"><a href="https://www.instagram.com/" target="_blank"></a>
+                <img src="img/Instagram.png" alt="Icon 1" class="icon">
+            </div>
+            <div class="icon-elemente">
+                <img src="img/telefon.png" alt="Icon 2" class="icon">
+            </div>
+            <div class="icon-elemente"><a href="https://www.facebook.com/" target="_blank">
+                    <img src="img/Facebook.png" alt="Icon 3" class="icon"></a>
+            </div>
+        </section>
+  
+</footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("nav_links").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("nav_links").style.width = "0px";
+        }
+    </script>
 
 </body>
 </html>

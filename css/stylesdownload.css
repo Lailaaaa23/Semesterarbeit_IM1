@@ -1,0 +1,90 @@
+:root {
+    --blue_low_opacity_background: rgba(30, 73, 153, 0.9);
+    --lachs: rgb(255, 190, 179);
+    --light_yellow: rgb(255, 244, 221);
+    --grey: rgb(211, 206, 211)
+  }
+
+  #active_link {
+    color: var(--blue_low_opacity_background);
+  }
+
+.title_download {
+    color: var(--lachs);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.undertitle {
+    font-size: 15px;
+    color: var(--light_yellow);
+    margin-bottom: 50px;
+}
+
+.three_icons img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.app_icon {
+    width: 100px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+@media (min-width: 1000px) {
+
+    #active_link {
+        color: var(--lachs);
+    }
+
+    .title_download {
+        font-size: 50px;
+
+    }
+    
+    .undertitle {
+        font-size: 20px;
+    }
+
+    .app_icon {
+        box-shadow: 8px 8px var(--light_yellow);
+      }
+
+    .whole_front {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .three_icons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+}
+
+@media (min-width: 1260px) {
+
+    .download_icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icon_google {
+        transform: translate(5%, -30%);
+    }
+
+}
+
+
+
+
+
+
+
+
