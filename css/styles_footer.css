@@ -10,6 +10,7 @@ footer {
     background-repeat: repeat-x; /* Bild horizontal wiederholen */
     background-position: bottom; /* Positioniert das Bild am unteren Rand */
     height: 200px; /* Festgelegte Höhe des Footers */
+    margin-top: 50px;
 }
 
 /* Layout des Body */
