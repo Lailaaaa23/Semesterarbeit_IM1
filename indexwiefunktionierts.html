@@ -6,31 +6,87 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_footer.css">
     <link rel="stylesheet" href="css/styleswiefunktionierts.css">
 
 </head>
 <body>
-    <div>
-        <p class="undertitle"> WIE FUNKTIONIERT'S?
-        </p>
-    </div>
-    <div>
-        <ol class="paragraph_wiefunktionierts">
-            <li>In App Store oder Google Play Store gehen <br> App “Patschifig Adventures” downloaden</a></li>
-            <li>App öffnen und einmalige Erstregistrierung vornehmen</li>
-            <li>Destination wählen</li>
-            <li>Package zusammenstellen <br> (Bergbahnticket, Transport und Verpflegung wählen)</li>
-            <li>Package in Warenkorb legen</li>
-            <li>Bestellung abschliessen</li>
-            <li>Du findest dein Ticket für deinen ganzen <br> Adventure-Tag in deinem Profil in der App</li>
-        </ol>
-        <form action="/download" method="post"
-        class="custom-button">
-            <button type="download"> download</button>
-          </form>
-        <p class="paragraph_wiefunktionierts">Let's Fätz und bliib immer schön patschifig uf de Piste!
-        </p>
-    </div>
+    <main>
+
+        <a id="logo" href="indexstartseite.html"> PATSCHIFIG<br>ADVENTURES</a>
+        <nav id="nav_links" class="nav_links">
+            <a id="nav_closer" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            <a href="/indexbergregionen.html">Bergregionen</a>
+            <a id="active_link" href="/indexwiefunktionierts.html">Wie funktioniert's</a>
+            <a href="/indexabout.html">About us</a>
+            <a href="/indexdownload.html">Download App</a>
+        </nav>
+        <span id="burger" onclick="openNav()">&#9776;</span>
+
+
+        <div>
+            <p class="undertitle"> WIE FUNKTIONIERT'S?
+            </p>
+        </div>
+        <section>
+            <ol class="paragraph_wiefunktionierts">
+                <article>
+                    <li>In App Store oder Google Play Store gehen <br><a href="/indexdownload.html">App “Patschifig
+                            Adventures” downloaden</a></li>
+                    <li>App öffnen und einmalige Erstregistrierung vornehmen</li>
+                    <li>Destination wählen</li>
+                    <li>Package zusammenstellen <br> (Bergbahnticket, Transport und Verpflegung wählen)</li>
+                </article>
+                <article>
+                    <li>Package in Warenkorb legen</li>
+                    <li>Bestellung abschliessen</li>
+                    <li>Du findest dein Ticket für deinen ganzen <br> Adventure-Tag in deinem Profil in der App</li>
+                </article>
+            </ol>
+            <div class="custom-button">
+                <a href="/indexdownload.html"><button type="download"> download</button></a>
+            </div>
+            <p class="slogan">Let's Fätz und bliib immer schön patschifig uf de Piste!
+            </p>
+        </section>
+
+        <section>
+            <img class="granny" src="/img/granny.png" alt="Werbegesicht Granny">
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="Titel_Laptop">
+            <p class="titel_footer">Brauchst du mehr Infos?</p>
+
+            <a href="mailto: patschifig.adventures@gmail.com">
+                <button class="untertitel_footer">schreib uns</button>
+            </a>
+        </section>
+
+        <section class="icon-container">
+            <div class="icon-elemente"><a href="https://www.instagram.com/" target="_blank"></a>
+                <img src="img/Instagram.png" alt="Icon 1" class="icon">
+            </div>
+            <div class="icon-elemente">
+                <img src="img/telefon.png" alt="Icon 2" class="icon">
+            </div>
+            <div class="icon-elemente"><a href="https://www.facebook.com/" target="_blank">
+                    <img src="img/Facebook.png" alt="Icon 3" class="icon"></a>
+            </div>
+        </section>
+
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("nav_links").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("nav_links").style.width = "0px";
+        }
+    </script>
     
 </body>
 </html>
