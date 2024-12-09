@@ -72,7 +72,7 @@ nav {
   height: 230px;
   border-radius: 25px;
   transition: 0.5s;
- 
+   
 
 }
 
@@ -143,8 +143,14 @@ nav {
   
   position: relative;
 
+}
 
+.text-element {
 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .Bergregionen {
@@ -159,9 +165,8 @@ nav {
 .text-Bergregionen {
   
   position: absolute;
-  bottom: 20px;
-  left: 15px;
-  text-align: center;
+  bottom: 50%;
+  left: 15%;
 
   color: var(--lachs);
   font-size: 18px;
@@ -171,11 +176,8 @@ nav {
 
 .Bergregionen img {
 
-  width: 250px;
+  width: 290px;
   border-radius: 25px;
-  
-
-
 }
 
 
@@ -281,6 +283,7 @@ nav {
     font-family: lexend;
     display: block;
     margin-top: 15px;
+    margin-left: 30px;
   }
 
   .content {
@@ -339,7 +342,6 @@ nav {
   .text-element{
 
     flex-direction: row;
-    margin-top: 90px;
     margin-left: 30px;   
   
    
