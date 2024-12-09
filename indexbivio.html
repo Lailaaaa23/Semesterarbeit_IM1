@@ -6,13 +6,25 @@
     <title>Bivio</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_footer.css">
     <link rel="stylesheet" href="css/stylesbivio.css">
 </head>
 <body>
-    <main class="alle_nachrichten_uebersicht">
+
+    <a id="logo" href="indexstartseite.html"> PATSCHIFIG<br>ADVENTURES</a>
+        <nav id="nav_links" class="nav_links">
+            <a id="nav_closer" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            <a id="active_link" href="/indexbergregionen.html">Bergregionen</a>
+            <a href="/indexwiefunktionierts.html">Wie funktioniert's</a>
+            <a href="/indexabout.html">About us</a>
+            <a href="/indexdownload.html">Download App</a>
+        </nav>
+        <span id="burger" onclick="openNav()">&#9776;</span>
+
+    <main>
 
         <section>
-            <div class="title">BIVIO</div>
+            <div class="title_site">BIVIO</div>
         </section>
 
 
@@ -50,6 +62,37 @@
 
     </main>
 
+    <footer>
+        <section class="Titel_Laptop"> 
+            <p class="titel_footer">Brauchst du mehr Infos?</p>
+
+            <a href="mailto: patschifig.adventures@gmail.com">
+                <button class="untertitel_footer">schreib uns</button>
+            </a>
+        </section>
+        
+        <section class="icon-container">
+            <div class="icon-elemente"><a href="https://www.instagram.com/" target="_blank"></a>
+                <img src="img/Instagram.png" alt="Icon 1" class="icon">
+            </div>
+            <div class="icon-elemente">
+                <img src="img/telefon.png" alt="Icon 2" class="icon">
+            </div>
+            <div class="icon-elemente"><a href="https://www.facebook.com/" target="_blank">
+                    <img src="img/Facebook.png" alt="Icon 3" class="icon"></a>
+            </div>
+        </section>
+  
+</footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("nav_links").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("nav_links").style.width = "0px";
+        }
+    </script>
 
 </body>
 </html>
