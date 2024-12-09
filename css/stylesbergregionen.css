@@ -38,6 +38,8 @@
     align-items: center; 
 
     margin-top: 180px;
+    margin-bottom: 280px;
+
   }
 
 
@@ -92,6 +94,10 @@
         color: var(--lachs);
         text-align: center;
         font-size: 50px;
+    }
+
+    .links {
+        margin-bottom: 235px;
     }
 
     .links p{
