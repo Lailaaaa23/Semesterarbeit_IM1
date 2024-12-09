@@ -180,6 +180,14 @@ nav {
   border-radius: 25px;
 }
 
+.text-element a:hover{
+  transform: scale(1.1);
+}
+
+.Bergregionen:hover {
+  transform: scale(1.1);
+}
+
 
 @media(min-width:1000px) {
 
@@ -332,7 +340,6 @@ nav {
    
   }
 
-  
 
 }
 
