@@ -302,8 +302,8 @@ nav {
   .text-container {
     display: flex;
     justify-content: center;
-
     margin: 40px;
+    margin-bottom: 50px;
     
 
   }
@@ -325,14 +325,9 @@ nav {
     width: auto;
     height: 350px;
     border-radius: 25px;
-
-    
-  
   }
 
   .text-element{
-
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -345,11 +340,14 @@ nav {
 
 @media (min-width:1260px) {
 
+  .text-container a div{
+    width: auto;
+  }
+
 
   .text-element{
 
     flex-direction: row;
-    margin-left: 30px;   
   
    
   }
