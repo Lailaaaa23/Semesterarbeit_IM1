@@ -1,0 +1,128 @@
+* {
+
+    color: #FFF4DD;
+    font-family: lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    text-decoration: none;
+  }
+  
+  :root {
+    --blue_low_opacity_background: rgba(30, 73, 153, 0.9);
+    --lachs: rgb(255, 190, 179);
+    --light_yellow: rgb(255, 244, 221);
+    --grey: rgb(211, 206, 211)
+  }
+
+  #active_link {
+    color: var(--blue_low_opacity_background);
+}
+
+.title_bergregionen {
+
+    color: var(--lachs);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+
+}
+
+.links {
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+
+    margin-top: 180px;
+  }
+
+
+.links p{
+    background: rgba(255, 255, 255, 0.20);
+    padding: 10px;
+    border-radius: 20px;
+    /* display: inline-block;  */
+    margin: 10px;
+    text-align: center;
+
+    left: 30px;
+
+
+    font-size: 18px;
+    text-shadow: 2px 2px #1E4999;
+
+    width: 250px;
+
+}
+
+.links a:hover{
+    transform: scale(1.1);
+}
+
+.map {
+    position: absolute;
+    left:50%;
+    margin-left:-500px;
+    width: 1000px;
+    z-index: -1;
+}
+
+
+
+@media(min-width:1000px) {
+
+
+    body {
+        background: 
+        linear-gradient(rgba(30, 73, 153, 0.9), rgba(30, 73, 153, 0.9)), /* Halbtransparente Farbe */
+        url(/img/Bergregion.jpg) 50%/ cover no-repeat;
+        
+    }
+
+    #active_link {
+        color: var(--lachs);
+    }
+
+    .title_bergregionen {
+
+        color: var(--lachs);
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .links p{
+        width: auto;
+   }
+
+   .tschiertschen{
+        margin-top: 20px;
+        margin-left: 120px;
+   }
+
+   .heizenberg{
+        margin-top: 20px;
+        margin-right: 80px;
+   }
+
+   .vals{
+        margin-top: 10px;
+        margin-right: 400px;
+
+   }
+
+   .savognin{
+        margin-left: 150px;
+   }
+
+   .bivio{
+ 
+        margin-left: 200px;
+   }
+
+
+
+}
