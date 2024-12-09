@@ -1,54 +1,52 @@
+:root {
+    --blue_low_opacity_background: rgba(30, 73, 153, 0.9);
+    --lachs: rgb(255, 190, 179);
+    --light_yellow: rgb(255, 244, 221);
+    --grey: rgb(211, 206, 211)
+  }
+
 /* Footer Styling */
 footer {
     background-color: rgba(88, 107, 143, 0.79); /* Transparenter Blauton */
     text-align: center;
     padding-top: 15px; /* Innenabstand oben */
     padding-bottom: 20px; /* Innenabstand unten */
-    margin-bottom: 15px; /* Abstand zum nachfolgenden Element */
-    border-radius: 15px; /* Abgerundete Ecken */
+    border-radius: 25px; /* Abgerundete Ecken */
     background-image: url(/img/Vector\ 5.svg); /* Hintergrundbild */
     background-repeat: repeat-x; /* Bild horizontal wiederholen */
     background-position: bottom; /* Positioniert das Bild am unteren Rand */
     height: 200px; /* Festgelegte Höhe des Footers */
-    margin-top: 50px;
-}
-
-/* Layout des Body */
-body {
-    display: flex;
-    flex-direction: column; /* Layout mit vertikaler Ausrichtung */
+    margin-bottom: 30px;
 }
 
 /* Stil für die Footer-Titel */
 .titel_footer {
     font-family: sansita; /* Schriftart */
-    color: rgb(255, 244, 221); /* Sandfarbener Text */
-    font-size: 30px; /* Schriftgröße */
+    color: var(--light_yellow); /* Sandfarbener Text */
+    font-size: 18px; /* Schriftgröße */
     margin: 0px; /* Kein Abstand außerhalb des Titels */
 }
 
 /* Stil für die Untertitel */
 .untertitel_footer {
-    font-size: 14px; /* Schriftgröße */
+    font-size: 12px; /* Schriftgröße */
     letter-spacing: -2.5px; /* Geringerer Buchstabenabstand */
-    color: rgba(30, 73, 153, 0.9); /* Blauer Farbton */
-    border: 3px solid rgb(255, 190, 179); /* Rahmen in Lachsfarbe */
-    background-color: rgb(255, 190, 179); /* Hintergrund in Lachsfarbe */
-    padding: 4px 10px; /* Innenabstand */
+    color: var(--blue_low_opacity_background); /* Blauer Farbton */
+    border: 3px solid var(--lachs); /* Rahmen in Lachsfarbe */
+    background-color: var(--lachs); /* Hintergrund in Lachsfarbe */
+    padding: 10px 10px; /* Innenabstand */
     border-radius: 20px; /* Abgerundete Ecken */
     display: inline-block; /* Rahmen passt sich der Textgröße an */
-    margin: 20px 0; /* Abstand ober- und unterhalb */
+    margin: 20px; /* Abstand */
 }
 
 /* Hover-Effekt für Untertitel */
 .untertitel_footer:hover {
-    transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
-    cursor: pointer; /* Zeigt Zeiger bei Hover */
+    transform: scale(1.1); /* Leichte Vergrößerung beim Hover */
 }
 
 /* Container für die Icons */
 
-/*Doko Code Start*/
 .icon-container{
     display:flex;
     justify-content: center;
@@ -62,27 +60,20 @@ body {
 }
 
 .icon{
-    width:100%;
-    height:100%;
-    object-fit: cover;
+    height:75%;
 }
 
 /* Hover-Effekt für die Footer-Icons */
 .icon:hover {
-    transform: scale(1.2); /* Vergrößerung beim Hover */
+    transform: scale(1.1); /* Vergrößerung beim Hover */
     cursor: pointer; /* Zeigt Zeiger bei Hover */
 }
 
-/* Media Queries für Tablets */
-@media (min-width: 1000px) {
-    /* Keine speziellen Regeln für Tablets im Originalcode */
-}
 
 /* Media Queries für Desktops (große Bildschirme) */
-@media (min-width: 1260px) {
+@media (min-width: 1000px) {
     footer {
         display: flex;
-        align-items: center; /* Zentriert die Inhalte vertikal */
         justify-content: space-between; /* Verteilung der Elemente */
     }
 
@@ -92,9 +83,7 @@ body {
     }
 
     .Titel_Laptop {
-        display: flex;
-        flex-direction: column; /* Ordnet die Inhalte vertikal an */
-        margin-right: 240px; /* Abstand nach rechts */
+        margin-right: 180px; /* Abstand nach rechts */
     }
 
     .untertitel_footer {
@@ -113,6 +102,7 @@ body {
     .icon-elemente{
         margin-bottom: 10px;
     }
+    .icon{
+        height:100%;
     }
-   
-/*Doko Code Ende*/
+}
