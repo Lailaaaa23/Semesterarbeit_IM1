@@ -17,6 +17,7 @@ footer {
     background-position: bottom; /* Positioniert das Bild am unteren Rand */
     height: 200px; /* Festgelegte Höhe des Footers */
     margin-bottom: 30px;
+
 }
 
 /* Stil für die Footer-Titel */
@@ -106,3 +107,17 @@ footer {
         height:100%;
     }
 }
+
+/*Footer immer ganz unten*/
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex:1;
+  }

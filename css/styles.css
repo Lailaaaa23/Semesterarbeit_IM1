@@ -359,3 +359,7 @@ nav {
   }
 
 }
+
+html,body{
+  height: 100%
+}
