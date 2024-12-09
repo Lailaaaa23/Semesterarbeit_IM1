@@ -118,11 +118,6 @@ nav {
   margin-top: 400px;
 }
 
-.text-container{
-  width: 100%;
-  margin: auto;
-  left: 50%;
-}
 
 .text-container a div{
   
@@ -134,11 +129,13 @@ nav {
   padding: 20px;
 
   margin: 30px;
-  text-align: center;
 
   color: var(--lachs);
   font-size: 15px;
 
+  width: 250px;
+
+  text-align: center;
 
 }
 
@@ -147,11 +144,14 @@ nav {
   position: relative;
 
 
+
 }
 
 .Bergregionen {
 
   padding:0px;
+  text-align: center;
+ 
 
   
 }
@@ -160,20 +160,21 @@ nav {
   
   position: absolute;
   bottom: 20px;
+  left: 15px;
+  text-align: center;
 
   color: var(--lachs);
-  font-size: 15px;
+  font-size: 18px;
   text-shadow: 2px 2px #1E4999;
- 
 
 }
 
 .Bergregionen img {
 
-  width: 100%;
-  height: 100%;
+  width: 250px;
   border-radius: 25px;
   
+
 
 }
 
@@ -296,12 +297,6 @@ nav {
 
   }
 
-  .Bergregionen {
-
-    
-   
-    
-  }
   
   .text-Bergregionen {
     
@@ -316,9 +311,10 @@ nav {
   
   .Bergregionen img {
   
-
+    width: auto;
     height: 350px;
     border-radius: 25px;
+
     
   
   }
@@ -338,7 +334,7 @@ nav {
 }
 
 @media (min-width:1260px) {
-  
+
 
   .text-element{
 
