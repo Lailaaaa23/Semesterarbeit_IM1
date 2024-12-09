@@ -1,13 +1,3 @@
-* {
-    color: #FFF4DD;
-    font-family: lexend;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-decoration: none;
-}
-
 :root {
     --blue: rgb(105, 19, 13);
     --blue_low_opacity_background: rgba(30, 73, 153, 0.9);
@@ -16,22 +6,13 @@
     --grey: rgb(211, 206, 211);
 }
 
-body {
-    background-color: var(--blue_low_opacity_background);
-}
-
-@font-face {
-    font-family: lexend;
-    src: url(/fonts/lexendzetta.ttf);
-    font-style: normal;
-}
-
 .title {
-    font-family: lexend;
-    color: #FFBEB3;
-    margin-top: 50px;
+    color: var(--lachs);
     text-align: center;
-}
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
 
 /* Basis-Styles */
 .picture-container {
