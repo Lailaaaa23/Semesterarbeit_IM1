@@ -85,17 +85,17 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .back_to_button a div { 
+}
+
+.back_to_button a div { 
     font-size: 15px;
     text-align: center;
     color: var(--lachs);  
-  }
-  
-  .back_to_button:hover {
+}
+
+.back_to_button:hover {
     transform: scale(1.1);
-  }
+}
 
 @media (min-width: 1000px) {
 
@@ -134,20 +134,18 @@
         height: auto; /* Maintain the aspect ratio */
         margin-top: 20px; 
     }
-
     .back_to_button {
         margin: 50px;
         width: auto;
-        height: auto;
-      }
+    }
     
-      .two_buttons {
+    .two_buttons {
         display: flex;
         justify-content: center;
-      }
+    }
     
-      .back_to_button a div { 
+    .back_to_button a div { 
         text-align: center;
-      }
+    }
 
 }
