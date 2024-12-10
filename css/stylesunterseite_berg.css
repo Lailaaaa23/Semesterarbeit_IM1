@@ -80,6 +80,29 @@
     font-size: 16px;
 }
 
+.back_to_button {
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.20);
+    text-shadow: 2px 2px #1E4999;
+    padding: 15px;
+    margin: 50px;
+    width: 200px;
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back_to_button a div { 
+    font-size: 15px;
+    text-align: center;
+    color: var(--lachs);  
+}
+
+.back_to_button:hover {
+    transform: scale(1.1);
+}
+
 /* 2. Tablet/iPad (max-width: 1000px) */
 @media (min-width: 1000px) {
     .title_site {
@@ -103,6 +126,10 @@
     }
 
     .beschrieb p {
+        font-size: 20px;
+    }
+
+    .back_to_button{
         font-size: 20px;
     }
 }
