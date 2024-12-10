@@ -66,6 +66,29 @@ ol.paragraph_wiefunktionierts {
   margin-bottom: 50px;
 }
 
+.back_to_button {
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.20);
+  text-shadow: 2px 2px #1E4999;
+  padding: 15px;
+  margin: 50px;
+  width: 200px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back_to_button a div { 
+  font-size: 15px;
+  text-align: center;
+  color: var(--lachs);  
+}
+
+.back_to_button:hover {
+  transform: scale(1.1);
+}
+
 @media(min-width:1000px) {
 
   #active_link {
@@ -99,6 +122,20 @@ ol.paragraph_wiefunktionierts {
 
   .custom-button button{
     font-size: 20px;
+  }
+
+  .back_to_button {
+    margin: 50px;
+    width: auto;
+  }
+
+  .two_buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .back_to_button a div { 
+    text-align: center;
   }
 
 }
