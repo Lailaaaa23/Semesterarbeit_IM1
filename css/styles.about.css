@@ -1,76 +1,44 @@
-* {
-
-color: #FFF4DD;
-font-family: lexend;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-
-text-decoration: none;
-}
-
 :root {
---blue: rgb(105, 19, 13);
 --blue_low_opacity_background: rgba(30, 73, 153, 0.9);
 --lachs: rgb(255, 190, 179);
 --light_yellow: rgb(255, 244, 221);
 --grey: rgb(211, 206, 211)
 }
 
-body {
-background-color: var(--blue_low_opacity_background);
+#active_link {
+    color: var(--blue_low_opacity_background);
 }
 
-@font-face {
-    font-family: sansita;
-    src:url(/fonts/sansita_swashed.ttf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: lexend;
-    src: url(/fonts/lexendzetta.ttf);
-    font-style: normal;
-}
-
-.titel.about{
+.titel_about{
     color: var(--lachs);
     text-align: center;
-    font-size: 50px;
-    font-style: normal;
-    color: #FFBEB3;
-    font-weight: 700;
-    line-height: normal;
-}
-.bergtext{
-    color: #FFF4DD;
-    text-align: center;
-    font-family: "lexend";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    /* margin-left: 4cm;
-    margin-right: 4cm; */
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.vorundnachname{
-    max-width: 550px;
-    color: #FFBEB3;
-    font-size: x-large;
+.bergtext{
     text-align: center;
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin: 30px;
+  }
+
+.vorundnachname{
+    font-family: sansita;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
 } 
 .rolle{
-    max-width: 550px;
-    color: #FFBEB3;
-    font-size: large;
+    color: var(--lachs);
+    font-size: 15px;
     text-align: center;
     }
 
 .informationen {
     max-width: 550px;
-    font-size: medium;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -78,17 +46,16 @@ background-color: var(--blue_low_opacity_background);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .person{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 40px;
+    margin: 30px;
     justify-content: center;
     align-items: center;
-    max-width: 430px;
+    max-width: 300px;
 }
 
 .text{
@@ -107,7 +74,49 @@ background-color: var(--blue_low_opacity_background);
     margin-bottom: 10px; 
 }
 
-@media (min-width: 1550px) {
+.back_to_button {
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.20);
+    text-shadow: 2px 2px #1E4999;
+    padding: 15px;
+    margin: 50px;
+    width: 200px;
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .back_to_button a div { 
+    font-size: 15px;
+    text-align: center;
+    color: var(--lachs);  
+  }
+  
+  .back_to_button:hover {
+    transform: scale(1.1);
+  }
+
+@media (min-width: 1000px) {
+
+    #active_link {
+        color: var(--lachs);
+    }
+
+    .titel_about{
+        font-size: 50px;
+    }
+
+    .bergtext{
+        font-size: 18px;
+        margin: 30px;
+      }
+
+    .vorundnachname{
+        font-size: 40px;
+        margin-bottom: 20px;
+    } 
+
     .person{
         display: flex;
         flex-wrap: wrap;
@@ -115,31 +124,30 @@ background-color: var(--blue_low_opacity_background);
         margin-bottom: 60px;
         justify-content: center;
         align-items: center;
-        min-width: 600px;
+        min-width: 400px;
         height: auto;
     }
 
     .img{
         max-width: 1050px;
         max-height: 1000px;
-        display: block;
-        width: 100%; /* Make the image responsive */
         height: auto; /* Maintain the aspect ratio */
-        margin-top: 10px; 
+        margin-top: 20px; 
     }
 
-    .text{
-        display: block;
-        align-items: center;
-        width: 100%;
+    .back_to_button {
+        margin: 50px;
+        width: auto;
         height: auto;
-    }
-
-    .rolle{
-        max-width: 550px;
-        color: #FFBEB3;
-        font-size: large;
+      }
+    
+      .two_buttons {
+        display: flex;
+        justify-content: center;
+      }
+    
+      .back_to_button a div { 
         text-align: center;
-        }
+      }
 
 }
