@@ -9,13 +9,13 @@
     color: var(--lachs);
     text-align: center;
     font-size: 25px;
-    margin-bottom: 50px;
     margin-top: 30px;
   }
 
 /* Basis-Styles */
 .picture-container {
     display: flex;
+    margin-top: 50px;
 
 }
 
@@ -57,7 +57,7 @@
 .beschrieb p {
     color: var(--light_yellow);
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     margin: 20px auto;
     max-width: 600px;
 }
@@ -66,24 +66,19 @@
 
 /* 1. Mobile (max-width: 600px) */
 
-    .picture-container {
-        flex-direction: column; /* Elemente untereinander */
-        align-items: center;
-    }
+.picture-container {
+    flex-direction: column; /* Elemente untereinander */
+    align-items: center;
+}
 
-    .element {
-        width: 90%; /* Volle Breite des Containers */
-        height: auto;
-    }
+.element {
+    width: 90%; /* Volle Breite des Containers */
+    height: auto;
+}
 
-    .element h1 {
-        font-size: 16px;
-    }
-
-    .beschrieb p {
-        font-size: 16px;
-        padding: 10px;
-    }
+.element h1 {
+    font-size: 16px;
+}
 
 /* 2. Tablet/iPad (max-width: 1000px) */
 @media (min-width: 1000px) {
@@ -95,7 +90,7 @@
         flex-direction: row; /* Elemente bleiben nebeneinander */
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 20px;
+        margin: 100px;
     }
 
     .element {
@@ -108,7 +103,7 @@
     }
 
     .beschrieb p {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -116,6 +111,7 @@
 @media (min-width: 1260px) {
     .picture-container {
         margin-right: 30px;
+        margin-left: 0px;
     }
 
     .element {
@@ -123,12 +119,12 @@
         height: 250px;
     }
 
-    .überschrift h2 {
-        font-size: 24px;
+    .element h1 {
+        left: 120px;
     }
 
-    .beschrieb p {
-        font-size: 20px;
+    .überschrift h2 {
+        font-size: 24px;
     }
 
     .picture{
