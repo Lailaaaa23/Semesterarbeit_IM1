@@ -40,11 +40,10 @@ ol.paragraph_wiefunktionierts {
 
 .custom-button button {
     background-color: var(--lachs);  /* Graue Hintergrundfarbe */
-    color: var(--light_yellow);              /* Lachsfarbene Schrift */
+    color: var(--blue_low_opacity_background);
     border: none;                /* Kein Rand */
     padding: 10px 20px;          /* Abstand innerhalb des Buttons */
     border-radius: 20px;          /* Abgerundete Ecken */
-    cursor: pointer;            /* Mauszeiger wird zum Zeiger */
     text-align: center;          /* Text zentrieren */
     margin: 30px;
     font-size: 15px;

@@ -16,8 +16,6 @@ footer {
     background-repeat: repeat-x; /* Bild horizontal wiederholen */
     background-position: bottom; /* Positioniert das Bild am unteren Rand */
     height: 200px; /* Festgelegte Höhe des Footers */
-    margin-bottom: 30px;
-
 }
 
 /* Stil für die Footer-Titel */
@@ -33,7 +31,6 @@ footer {
     font-size: 12px; /* Schriftgröße */
     letter-spacing: -2.5px; /* Geringerer Buchstabenabstand */
     color: var(--blue_low_opacity_background); /* Blauer Farbton */
-    border: 3px solid var(--lachs); /* Rahmen in Lachsfarbe */
     background-color: var(--lachs); /* Hintergrund in Lachsfarbe */
     padding: 10px 10px; /* Innenabstand */
     border-radius: 20px; /* Abgerundete Ecken */
@@ -111,13 +108,13 @@ footer {
 /*Footer immer ganz unten*/
 html, body {
     height: 100%;
-  }
-  
-  body {
+}
+
+body {
     display: flex;
     flex-direction: column;
-  }
-  
-  main {
+}
+
+main {
     flex:1;
-  }
+}

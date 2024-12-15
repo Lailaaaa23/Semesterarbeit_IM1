@@ -194,8 +194,8 @@ nav {
   .nav_links {
     position: relative;
     display: flex;
-    justify-content: center;
-    left: 70%;
+    justify-content: right;
+    left: 100%;
     height: auto; 
     width: 0px !important;
     transition: 0s;
