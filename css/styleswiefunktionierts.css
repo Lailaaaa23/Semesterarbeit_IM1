@@ -11,24 +11,25 @@
 }
 
  .paragraph_wiefunktionierts{
-    color: var(--light_yellow);
     text-align: center;
-    margin: 30px;
 }
 
 .paragraph_wiefunktionierts li{
   margin: 10px;
   font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .paragraph_wiefunktionierts li a{
   color: var(--lachs);
   font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 ol.paragraph_wiefunktionierts {
     list-style-type: decimal; /* Nummerierte Liste */
-    text-align: center;
     margin-bottom: 10px;
     list-style-position: inside;
    

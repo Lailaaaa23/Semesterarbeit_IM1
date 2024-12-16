@@ -67,11 +67,12 @@ nav {
   width: 0;
   position: absolute;
   right: 0;
+  left: 0;
   height: 230px;
   border-radius: 25px;
   transition: 0.5s;
   z-index: 50;
-
+  overflow-x: hidden;
 }
 
 .nav_links a {
@@ -190,6 +191,10 @@ nav {
 }
 
 @media(min-width:1000px) {
+
+  nav {
+    overflow-x: visible;
+  }
 
   .nav_links {
     position: relative;

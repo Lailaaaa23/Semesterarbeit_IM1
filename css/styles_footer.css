@@ -16,6 +16,10 @@ footer {
     background-repeat: repeat-x; /* Bild horizontal wiederholen */
     background-position: bottom; /* Positioniert das Bild am unteren Rand */
     height: 200px; /* Festgelegte Höhe des Footers */
+    position: relative;
+
+
+
 }
 
 /* Stil für die Footer-Titel */
@@ -35,7 +39,7 @@ footer {
     padding: 10px 10px; /* Innenabstand */
     border-radius: 20px; /* Abgerundete Ecken */
     display: inline-block; /* Rahmen passt sich der Textgröße an */
-    margin: 20px; /* Abstand */
+    margin: 10px; /* Abstand */
 }
 
 /* Hover-Effekt für Untertitel */
@@ -49,7 +53,6 @@ footer {
     display:flex;
     justify-content: center;
     gap: 25px;
-    margin-top: 5px;
 }
 
 .icon-elemente{
@@ -67,12 +70,27 @@ footer {
     cursor: pointer; /* Zeigt Zeiger bei Hover */
 }
 
+.copyright {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blue_low_opacity_background);
+    position: absolute;
+    bottom: 0;  
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
 
 /* Media Queries für Desktops (große Bildschirme) */
 @media (min-width: 1000px) {
     footer {
         display: flex;
         justify-content: space-between; /* Verteilung der Elemente */
+        right: 25%;   
+        width: 150%;
+        position: relative;
     }
 
     .titel_footer {
@@ -81,7 +99,7 @@ footer {
     }
 
     .Titel_Laptop {
-        margin-right: 180px; /* Abstand nach rechts */
+        margin-right: 25%; /* Abstand nach rechts */
     }
 
     .untertitel_footer {
@@ -95,6 +113,8 @@ footer {
         padding-bottom: 20px;
         order: -1; /* Icons erscheinen vor den Texten */
         margin-top: 0px;
+
+        margin-left: 20%;
     }
     
     .icon-elemente{
@@ -103,6 +123,12 @@ footer {
     .icon{
         height:100%;
     }
+
+    .copyright {
+        right: auto; 
+        left: 20%;
+    }
+
 }
 
 /*Footer immer ganz unten*/
