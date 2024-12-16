@@ -93,9 +93,7 @@ nav {
 
 .intro {
   position: relative;
- 
   text-align: center;
-
 }
 
 .intro p{
@@ -121,65 +119,54 @@ nav {
 
 
 .text-container a div{
-  
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.20);
-  
   text-shadow: 2px 2px #1E4999;
   
   padding: 20px;
-
-  margin: 30px;
+  margin: 20px;
 
   color: var(--lachs);
   font-size: 15px;
 
   width: 250px;
-
   text-align: center;
-
 }
 
 .text-container  div a{
-  
   position: relative;
-
 }
 
 .buttons {
-
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center; 
-
+  margin: 15px;
 }
 
 .Bergregionen {
 
   padding:0px;
   text-align: center;
- 
-
-  
 }
 
 .text-Bergregionen {
-  
   position: absolute;
-  bottom: 50%;
+  bottom: 1%;
   left: 15%;
 
   color: var(--lachs);
   font-size: 18px;
   text-shadow: 2px 2px #1E4999;
-
 }
 
 .Bergregionen img {
-
   width: 290px;
-  border-radius: 25px;
+  border-radius: 20px;
+  height: 50px;
+  object-fit:cover;
+
 }
 
 .buttons a:hover{
@@ -216,7 +203,6 @@ nav {
     padding: 20px;
     flex-shrink: 0;
     margin: 0 50px 0 0;
-    
   }
 
   #burger {
@@ -336,18 +322,30 @@ nav {
 
 @media (min-width:1260px) {
 
-  .text-container{
-
-  }
-
   .text-container a div{
     width: auto;
   }
 
 
   .buttons {
-
     flex-direction: row;
+  }
+
+  .Bergregionen img {
+    height: 60px;
+    width: 250px;
+    border-radius: 25px;
+    object-fit:cover;
+    margin-right: 15px;
+    margin-top: 35px;
+    border-radius: 20px;
+
+  }
+
+  .text-Bergregionen {
+      bottom: 15%;
+      left: 8%;
+      font-size: 18px;
   }
 
   body {
