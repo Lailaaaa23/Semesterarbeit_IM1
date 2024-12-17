@@ -88,7 +88,7 @@ footer {
     footer {
         display: flex;
         justify-content: space-between; /* Verteilung der Elemente */
-
+        
         position: relative;
     }
 
@@ -98,7 +98,7 @@ footer {
     }
 
     .Titel_Laptop {
-        margin-right: 25%; /* Abstand nach rechts */
+        margin-right: 15%; /* Abstand nach rechts */
     }
 
     .untertitel_footer {
@@ -112,7 +112,6 @@ footer {
         padding-bottom: 20px;
         order: -1; /* Icons erscheinen vor den Texten */
         margin-top: 0px;
-
     }
     
     .icon-elemente{
@@ -124,35 +123,8 @@ footer {
 
     .copyright {
         right: auto; 
-        left: 50%;
+        left: 62%;
 
-    }
-
-}
-
-@media (min-width: 1260px) {
-    footer{    
-        right: 25%;   
-        width: 150%;
-    }
-
-    .copyright {
-        left: 20%;
-    }
-
-    .icon-elemente{
-        width:50px;
-        height:50px;
-
-        margin-left: 700%;
-    }
-    
-    .icon{
-        height:75%;
-    }
-
-    .Titel_Laptop {
-        margin-right: 40%; /* Abstand nach rechts */
     }
 
 }
