@@ -15,10 +15,7 @@ footer {
     background-image: url(/img/Vector\ 5.svg); /* Hintergrundbild */
     background-repeat: repeat-x; /* Bild horizontal wiederholen */
     background-position: bottom; /* Positioniert das Bild am unteren Rand */
-    height: 200px; /* Festgelegte Höhe des Footers */
     position: relative;
-
-
 
 }
 
@@ -26,7 +23,7 @@ footer {
 .titel_footer {
     font-family: sansita; /* Schriftart */
     color: var(--light_yellow); /* Sandfarbener Text */
-    font-size: 18px; /* Schriftgröße */
+    font-size: 22px; /* Schriftgröße */
     margin: 0px; /* Kein Abstand außerhalb des Titels */
 }
 
@@ -95,15 +92,15 @@ footer {
     .titel_footer {
         font-size: 32px; /* Größere Schrift für Desktop */
         margin: 10px; /* Leichter Abstand */
-    }
-
-    .Titel_Laptop {
-        margin-right: 15%; /* Abstand nach rechts */
+        text-align: right;
+        margin-right: 160px;
     }
 
     .untertitel_footer {
         font-size: 20px; /* Größere Schrift für Desktop */
         padding: 10px 25px; /* Mehr Innenabstand für Desktop */
+        text-align: right;
+        margin-right: 187px;
     }
 
     .icon-container{
@@ -122,11 +119,17 @@ footer {
     }
 
     .copyright {
-        right: auto; 
-        left: 62%;
-
+        text-align: right;
+        margin-right: 260px;
     }
 
+}
+
+@media (min-width: 1260px) {
+    footer {
+        border-radius: 0px;
+        width: 100vw;
+    }
 }
 
 /*Footer immer ganz unten*/
