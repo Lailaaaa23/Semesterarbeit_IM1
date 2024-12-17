@@ -85,6 +85,7 @@ nav {
   display: block;
   text-align: right;
   margin-left: 10px;
+  margin-right: 10px;
   font-size: 30px;
   position: absolute;
 }
