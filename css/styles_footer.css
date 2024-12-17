@@ -67,7 +67,6 @@ footer {
 /* Hover-Effekt für die Footer-Icons */
 .icon:hover {
     transform: scale(1.1); /* Vergrößerung beim Hover */
-    cursor: pointer; /* Zeigt Zeiger bei Hover */
 }
 
 .copyright {

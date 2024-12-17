@@ -39,7 +39,7 @@ ol.paragraph_wiefunktionierts {
     text-align: center;
 }
 
-.custom-button button {
+.custom-button div {
     background-color: var(--lachs);  /* Graue Hintergrundfarbe */
     color: var(--blue_low_opacity_background);
     border: none;                /* Kein Rand */
@@ -48,10 +48,11 @@ ol.paragraph_wiefunktionierts {
     text-align: center;          /* Text zentrieren */
     margin: 30px;
     font-size: 15px;
-    }
+    display: inline-block;
+}
 
 /* Optional: Hover-Effekt für den gesamten Button */
-.custom-button button:hover {
+.custom-button div:hover {
   transform: scale(1.1);
 }
 
