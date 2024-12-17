@@ -53,6 +53,7 @@ footer {
     display:flex;
     justify-content: center;
     gap: 25px;
+    margin-bottom: 15px;
 }
 
 .icon-elemente{
@@ -87,8 +88,7 @@ footer {
     footer {
         display: flex;
         justify-content: space-between; /* Verteilung der Elemente */
-        right: 25%;   
-        width: 150%;
+
         position: relative;
     }
 
@@ -113,7 +113,6 @@ footer {
         order: -1; /* Icons erscheinen vor den Texten */
         margin-top: 0px;
 
-        margin-left: 20%;
     }
     
     .icon-elemente{
@@ -125,7 +124,35 @@ footer {
 
     .copyright {
         right: auto; 
+        left: 50%;
+
+    }
+
+}
+
+@media (min-width: 1260px) {
+    footer{    
+        right: 25%;   
+        width: 150%;
+    }
+
+    .copyright {
         left: 20%;
+    }
+
+    .icon-elemente{
+        width:50px;
+        height:50px;
+
+        margin-left: 700%;
+    }
+    
+    .icon{
+        height:75%;
+    }
+
+    .Titel_Laptop {
+        margin-right: 40%; /* Abstand nach rechts */
     }
 
 }
