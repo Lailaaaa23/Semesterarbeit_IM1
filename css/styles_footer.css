@@ -125,13 +125,6 @@ footer {
 
 }
 
-@media (min-width: 1260px) {
-    footer {
-        border-radius: 0px;
-        width: 100vw;
-    }
-}
-
 /*Footer immer ganz unten*/
 html, body {
     height: 100%;

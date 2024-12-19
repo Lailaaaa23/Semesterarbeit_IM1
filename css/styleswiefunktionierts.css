@@ -10,45 +10,46 @@
   color: var(--blue_low_opacity_background);
 }
 
- .paragraph_wiefunktionierts{
-    text-align: center;
+.undertitle_wie_funktionierts {
+  color: var(--lachs);
+  text-align: center;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.paragraph_wiefunktionierts{
+  text-align: center;
+  list-style-type: decimal; /* Nummerierte Liste */
+  margin-bottom: 10px;
+  list-style-position: inside;
 }
 
 .paragraph_wiefunktionierts li{
   margin: 10px;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .paragraph_wiefunktionierts li a{
   color: var(--lachs);
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-
-}
-
-ol.paragraph_wiefunktionierts {
-    list-style-type: decimal; /* Nummerierte Liste */
-    margin-bottom: 10px;
-    list-style-position: inside;
-   
 }
 
 .custom-button {
-    text-align: center;
+  text-align: center;
 }
 
 .custom-button div {
-    background-color: var(--lachs);  /* Graue Hintergrundfarbe */
-    color: var(--blue_low_opacity_background);
-    border: none;                /* Kein Rand */
-    padding: 10px 20px;          /* Abstand innerhalb des Buttons */
-    border-radius: 20px;          /* Abgerundete Ecken */
-    text-align: center;          /* Text zentrieren */
-    margin: 30px;
-    font-size: 15px;
-    display: inline-block;
+  background-color: var(--lachs);  /* Graue Hintergrundfarbe */
+  color: var(--blue_low_opacity_background);
+  border: none;                /* Kein Rand */
+  padding: 10px 20px;          /* Abstand innerhalb des Buttons */
+  border-radius: 20px;          /* Abgerundete Ecken */
+  text-align: center;          /* Text zentrieren */
+  margin: 30px;
+  font-size: 15px;
+  display: inline-block;
 }
 
 /* Optional: Hover-Effekt für den gesamten Button */
@@ -94,7 +95,11 @@ ol.paragraph_wiefunktionierts {
 
   #active_link {
     color: var(--lachs);
-}
+  }
+
+  .undertitle_wie_funktionierts {
+    font-size: 40px;
+  }
 
   .paragraph_wiefunktionierts {
     color: var(--light_yellow);
@@ -106,9 +111,8 @@ ol.paragraph_wiefunktionierts {
   .paragraph_wiefunktionierts li{
     font-size: 20px;
     text-align: left;
-    margin-right: 40px;
-    margin-left: 40px;
-
+    margin-left: 100px;
+    max-width: 450px;
   }
 
   .paragraph_wiefunktionierts li a{
